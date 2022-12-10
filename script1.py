@@ -25,8 +25,6 @@ def load_audio():
 def model_loading():
     return EncoderClassifier.from_hparams(source="speechbrain/lang-id-voxlingua107-ecapa", savedir="tmp")    
 
-#Если кнопка нажата, то запускаем распознавание
-
 
 
 def identify():
