@@ -5,7 +5,6 @@ from speechbrain.pretrained import EncoderClassifier
 
 import wave
 
-
 class SoundFile:
 
     def __init__(self, filename):
