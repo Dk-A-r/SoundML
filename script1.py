@@ -28,7 +28,7 @@ def model_loading():
 
 
 def identify():
-    signal = language_id.load_audio(audio_data)
+    signal = language_id.load_audio("temp.wav")
     prediction =  language_id.classify_batch(signal)
     st.write(prediction[3][0] + ' with probability' + f" {prediction[1].exp().item()}")
 
