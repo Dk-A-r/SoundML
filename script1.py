@@ -28,7 +28,6 @@ def model_loading():
 
 
 def identify():
-    language_id = model_loading()
     signal = language_id.load_audio(audio_data)
     prediction =  language_id.classify_batch(signal)
     st.write(prediction[3][0] + ' with probability' + f" {prediction[1].exp().item()}")
@@ -38,7 +37,7 @@ load_audio()
 result = st.button('Распознать аудиофайл')
     
 if result:
-    model_loading()
+    language_id = model_loading()
     identify()
 
     
