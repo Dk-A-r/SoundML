@@ -26,8 +26,9 @@ audio_data = load_audio()
 def model_loading():
     return EncoderClassifier.from_hparams(source="speechbrain/lang-id-voxlingua107-ecapa", savedir="tmp")    
 
-result = st.button('Распознать аудиофайл')
 #Если кнопка нажата, то запускаем распознавание
+result = st.button('Распознать аудиофайл')
+
 
 def identify():
     language_id = model_loading()
