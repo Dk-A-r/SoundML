@@ -2,7 +2,6 @@ import io
 import streamlit as st
 import torchaudio
 from speechbrain.pretrained import EncoderClassifier
-from pydub import AudioSegment
 
 
 def load_audio():
