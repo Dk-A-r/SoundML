@@ -10,6 +10,9 @@ sox - аудио backend (для Linux)
 
 Ссылка на модель: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa/tree/main
 
+Для тестирования приложения использовались файлы из следующих датасетов:
+ - Russian Single Speaker Speech Dataset (https://www.kaggle.com/datasets/bryanpark/russian-single-speaker-speech-dataset?resource=download)
+ - Speech Emotion Recognition (en) (https://www.kaggle.com/datasets/dmitrybabko/speech-emotion-recognition-en?resource=download)
 
 
 
