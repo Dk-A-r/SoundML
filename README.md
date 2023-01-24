@@ -5,7 +5,7 @@
 
 Для корректной работы требуется установка sound backend:
 
-soundfile - аудио backend (для Windows)
+soundfile - аудио backend (для Windows);
 sox - аудио backend (для Linux)
 
 Ссылка на модель: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa/tree/main
