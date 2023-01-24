@@ -46,3 +46,5 @@ def test_load():
     signal = language_id.load_audio("shortstories_childrenadults_0008.wav")
     prediction =  language_id.classify_batch(signal)
     assert prediction[3][0] == 'ru: Russian'
+    signal = language_id.load_audio("test2.wav")
+    assert prediction[3][0] == 'en: English'
