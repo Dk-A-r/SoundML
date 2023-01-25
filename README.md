@@ -15,8 +15,8 @@
 
 
 ### Для корректной работы требуется установка sound backend:
-soundfile - аудио backend (для Windows); <br>
-sox - аудио backend (для Linux)
+<i>soundfile</i> - аудио backend (для Windows); <br>
+<i>sox</i> - аудио backend (для Linux)
 
 
 ### Для тестирования приложения использовались файлы из следующих датасетов:
