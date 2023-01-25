@@ -5,7 +5,6 @@ from speechbrain.pretrained import EncoderClassifier
 
 
 APP_NAME = 'Определение языка аудиофайла'
-APP_ICON = 'logo.png'
 APP_DESCRIPTION = '<i>Используемая модель: <a href="https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa/tree/main" target="_blank">Spoken Language Identification Model</a></i>'
 APP_REP = '<i> <a href="https://github.com/Dk-A-r/SoundML" target="_blank">Репозиторий проекта</a></i>'
 
@@ -38,11 +37,12 @@ def identify(language_id):
     st.write(prediction[3][0] + ' with probability' + f" {prediction[1].exp().item()}")
 
 def main():
-    st.set_page_config(page_title=APP_NAME, page_icon=APP_ICON)
-    st.title(APP_ICON + ' ' + APP_NAME)
+    st.set_page_config(page_title=APP_NAME)
+    st.title(APP_NAME)
     st.markdown(APP_DESCRIPTION, True)
-
-    st.info('''Команда:  
+    st.markdown(APP_REP, True)
+    
+    st.info('''Состав команды:  
         - Карпов Данил  
         - Репенко Диана''')
 
