@@ -3,7 +3,8 @@
 ### В рамках настоящего проекта имплементирована модель speechbrain для
 обработки аудиофайлов в рамках вебприложения. Функционал приложения: определение языка аудиофайла (в формате WAV), который загружается на сайт посредством встроенной формы. Для своего размера (~85 MB) модель сравнительно точна.
 
-### Проект реализован с помощью Streamlit и развёрнут на Яндекс Облаке. Ссылка на приложение на платформе Streamlit: <u>https://dianar15-soundml-script1-v2z6z8.streamlit.app/</u>
+### Проект реализован с помощью Streamlit и развёрнут на Яндекс Облаке. 
+Ссылка на приложение на платформе Streamlit: <u>https://dianar15-soundml-script1-v2z6z8.streamlit.app/</u>
 
 ## <a href="https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa/tree/main" target="_blank">Ссылка на модель - Spoken Language Identification Model </a> 
 
