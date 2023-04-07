@@ -5,6 +5,7 @@ import torchaudio
 from speechbrain.pretrained import EncoderClassifier
 
 
+
 def load_audio():
     """Создание формы для загрузки аудио"""
 
@@ -43,6 +44,7 @@ if result:
 
 
 def test_load():
+    response = requests.get("https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa")
     language_id = model_loading()
     signal = language_id.load_audio("shortstories_childrenadults_0008.wav")
     prediction =  language_id.classify_batch(signal)
