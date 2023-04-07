@@ -1,4 +1,5 @@
 import io
+import requests
 import streamlit as st
 import torchaudio
 from speechbrain.pretrained import EncoderClassifier
@@ -49,3 +50,4 @@ def test_load():
     signal = language_id.load_audio("test2.wav")
     prediction =  language_id.classify_batch(signal)
     assert prediction[3][0] == 'en: English'
+    assert response.status_code == 200
