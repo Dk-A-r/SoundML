@@ -17,7 +17,7 @@ def load_audio():
     if uploaded_file is not None:
         #Получение загруженного аудио
         audio_data = uploaded_file.getvalue()
-        
+        #st.write(audio_data)
         #Вывод аудиоплеера
         st.audio(audio_data)
         with open("temp.wav","wb") as f:
